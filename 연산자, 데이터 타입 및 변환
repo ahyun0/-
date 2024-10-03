@@ -1,0 +1,30 @@
+# 타입
+ddd = 1 + 4
+print(ddd) # 5로 출력
+
+eee = 'hello' + 'there'
+print(eee) # hello there로 출력
+
+eee = eee + 1 # 문자열과 정수형 타입을 더하려 했기 때문에 에러 발생
+
+type(eee) # class 'str' 문자열 클래스 타입
+type(1) # 정수 클래스 타입
+
+# 타입 변환
+i = 42
+type(i) # int(정수) 타입
+f = float(i) # float(부동 소수점 수) 타입으로 변환
+print(f) # 42.0으로 출력
+type(f) # float 타입
+
+sval = '123'
+type(sval) # str(문자) 타입
+print(sval + 1) # 문자열과 int를 더한 것으로 오류 발생
+
+ival = int(sval)
+type(ival) # int 타입
+print(ival + 1) # int 타입 간 연산이기 때문에 124로 출력
+
+# 입력
+nzt = input('Enter your name: ') # Enter your name 뒤에 사용자가 입력값 넣음
+print("Hello", nzt) # 입력값을 nzt라는 변수에 할당하여 Hello 문자열과 함께 출력

@@ -1,0 +1,4 @@
+xh = input("Enter Hours: ")
+xr = input("Enter Rate: ")
+xp = float(xh) * float(xr) # 압력값이 str이기 때문에 float로 변환
+print("Pay:",xp)
